@@ -1,2 +1,0 @@
-# MPFNet
-code of MPFNet
