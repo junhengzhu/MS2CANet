@@ -69,7 +69,7 @@ def conv(in_planes, out_planes, kernel_size=3, stride=1, padding=1, dilation=1, 
 
 class PyConv(nn.Module):
 
-    def __init__(self, inplans, planes,  pyconv_kernels=[3, 5, 7], stride=1, pyconv_groups=[1, 4, 8]):
+    def __init__(self, inplans, planes,  pyconv_kernels=[1, 3, 5], stride=1, pyconv_groups=[1, 4, 8]):
         super(PyConv, self).__init__()
         self.conv2_1 = conv(inplans, planes // 4, kernel_size=pyconv_kernels[0], padding=pyconv_kernels[0] // 2,
                             stride=stride, groups=pyconv_groups[0])
