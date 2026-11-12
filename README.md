@@ -2,3 +2,4 @@
 code of MS2CANet
 run main.py
 pymodel.py has been updated. for Houston2013 and Trento kernel of pyconv is [1,3,5], Augsburg is [3,5,7]
+The threshold (β) in EFR is 0.3
