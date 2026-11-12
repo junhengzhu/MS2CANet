@@ -39,7 +39,7 @@ class SpatialAttentionModule(nn.Module):
         out = self.sigmoid(self.conv2d(out))
         y = torch.ones(size=(b,c,h,w),dtype=torch.float32).cuda()
         z = torch.zeros(size=(b,c,h,w),dtype=torch.float32).cuda()
-        beta = 0.2
+        beta = 0.3
         # change the value of beta to acquire best results
         out = torch.where(out.data>=beta,out,z)
         # print(out.grad)
